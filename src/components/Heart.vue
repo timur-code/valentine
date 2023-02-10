@@ -14,19 +14,21 @@
             <div class="text-xl whitespace-pre-wrap" :class="[yesCount > 0 ? 'text-red-400' : 'text-red-700']">
                 {{ response }}
             </div>
-            <div class="text-xl py-3">
-                Scroll down 
-            </div>
-            <div class="flex items-center flex-col w-auto">
-                <img class="object-cover rounded-lg shadow-lg lg:max-w-lg" src="../assets/1.jpg" alt="Love">
-                <p class="py-3">Thank you</p>
-                <img class="object-cover rounded-lg shadow-lg lg:max-w-lg" src="../assets/2.jpg" alt="Love">
-                <p class="py-3">for being</p>
-                <img class="object-cover rounded-lg shadow-lg lg:max-w-lg" src="../assets/3.jpg" alt="Love">
-                <p class="py-3">with me</p>
-                <img class="object-cover rounded-lg shadow-lg lg:max-w-lg" src="../assets/4.jpg" alt="Love">
-                <p class="py-3">I want to be with you always</p>
-                <img class="object-cover rounded-lg shadow-lg lg:max-w-lg" src="../assets/5.jpg" alt="Love">
+            <div v-if="yesCount > 0">
+                <div class="text-xl py-3">
+                    Scroll down 
+                </div>
+                <div class="flex items-center flex-col w-auto">
+                    <img class="object-cover rounded-lg shadow-lg lg:max-w-lg" src="../assets/1.jpg" alt="Love">
+                    <p class="py-3">Thank you</p>
+                    <img class="object-cover rounded-lg shadow-lg lg:max-w-lg" src="../assets/2.jpg" alt="Love">
+                    <p class="py-3">for being</p>
+                    <img class="object-cover rounded-lg shadow-lg lg:max-w-lg" src="../assets/3.jpg" alt="Love">
+                    <p class="py-3">with me</p>
+                    <img class="object-cover rounded-lg shadow-lg lg:max-w-lg" src="../assets/4.jpg" alt="Love">
+                    <p class="py-3">I want to be with you always</p>
+                    <img class="object-cover rounded-lg shadow-lg lg:max-w-lg" src="../assets/5.jpg" alt="Love">
+                </div>
             </div>
         </div>
     </div>
